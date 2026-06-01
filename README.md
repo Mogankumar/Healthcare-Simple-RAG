@@ -2,7 +2,7 @@
 
 A RAG-based system that lets you ask plain English questions about Medicare coverage policies and get cited, grounded answers.
 
-Built this because prior auth is one of the most painful parts of healthcare admin — a billing coordinator can spend 20+ minutes digging through CMS policy documents to answer something like "is this MRI covered?" This brings that down to a few seconds.
+Built this because prior auth is one of the most painful parts of healthcare admin, a billing coordinator can spend 20+ minutes digging through CMS policy documents to answer something like "is this MRI covered?" This brings that down to a few seconds.
 
 ## What it does
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 Add your Groq API key (free at console.groq.com):
 ```python
-GROQ_API_KEY = "your-key-here"
+GROQ_API_KEY = "groq key here"
 ```
 
 Run the notebook:
@@ -62,7 +62,7 @@ Retrieval accuracy on 4-policy prototype:
 retrieval accuracy: 4/4 = 100% (top-3 recall)
 ```
 
-Note: this is a small prototype benchmark — 4 policies, queries I wrote myself. Real production eval would need 100+ adversarial queries from actual billing staff.
+Note: this is a small prototype benchmark, 4 policies, queries I wrote myself. Real production eval would need 100+ adversarial queries from actual billing staff.
 
 ## Policies covered
 
